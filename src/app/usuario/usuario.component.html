@@ -1,9 +1,17 @@
-<p>
-  usuario works!
-</p>
-<div>
-  Nome do usuario:
-</div>
-<div>
-  {{usuario.nome}}
-</div>
+<table border="1">
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let usuario of usuarios;">
+    <td>
+      {{usuario.nome}}
+    </td>
+    <td>
+      {{usuario.email}}
+    </td>
+  </tr>
+</table>
+<button routerLink="add">
+  add
+</button>
